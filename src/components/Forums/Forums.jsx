@@ -11,9 +11,9 @@ const Forums = () => {
                     <p className='font-semibold pl-4'>Tickets</p>
                     <p className='badge badge-md'>40</p>
                 </div>
-                <div>
+                <div className='overflow-y-auto h-screen'>
                     {/* cards */}
-                    <div className='border p-2 rounded-lg border-[#2BA98B] bg-[#2BA98B] bg-opacity-10 mb-2'>
+                    <div className='border p-2 rounded-lg border-[#2BA98B] bg-[#2BA98B] bg-opacity-10 mb-2 overflow-y-auto'>
                         <div className='flex justify-between'>
                             <div className='flex items-center gap-2'>
                                 <img src="https://xsgames.co/randomusers/assets/avatars/male/71.jpg" alt="" className='rounded-full h-4' />
@@ -87,7 +87,8 @@ const Forums = () => {
                             <p className='text-xs'>You: Sure thing, I’ll have a look today. They’re looking great!</p>
 
                         </div>
-                    </div><div className='border p-2 rounded-lg border mb-2'>
+                    </div>
+                    <div className='border p-2 rounded-lg border mb-2'>
                         <div className='flex items-center justify-between'>
                             <div className='flex items-center gap-2'>
                                 <img src="https://xsgames.co/randomusers/assets/avatars/male/71.jpg" alt="" className='rounded-full h-4' />
@@ -116,21 +117,8 @@ const Forums = () => {
                             <p className='text-xs'>You: Sure thing, I’ll have a look today. They’re looking great!</p>
 
                         </div>
-                    </div><div className='border p-2 rounded-lg border mb-2'>
-                        <div className='flex items-center justify-between'>
-                            <div className='flex items-center gap-2'>
-                                <img src="https://xsgames.co/randomusers/assets/avatars/male/71.jpg" alt="" className='rounded-full h-4' />
-                                <div className=''>
-                                    <p className='font-semibold text-xs flex items-center'>Muhidul Hasan</p>
-                                </div>
-                            </div>
-                            <p className='text-xs font-semibold text-[#475467]'>11 Jan</p>
-                        </div>
-                        <div className='pt-4'>
-                            <p className='text-xs'>You: Sure thing, I’ll have a look today. They’re looking great!</p>
-
-                        </div>
-                    </div><div className='border p-2 rounded-lg border mb-2'>
+                    </div>
+                    <div className='border p-2 rounded-lg border mb-2'>
                         <div className='flex items-center justify-between'>
                             <div className='flex items-center gap-2'>
                                 <img src="https://xsgames.co/randomusers/assets/avatars/male/71.jpg" alt="" className='rounded-full h-4' />
@@ -145,6 +133,51 @@ const Forums = () => {
 
                         </div>
                     </div>
+                    <div className='border p-2 rounded-lg border mb-2'>
+                        <div className='flex items-center justify-between'>
+                            <div className='flex items-center gap-2'>
+                                <img src="https://xsgames.co/randomusers/assets/avatars/male/71.jpg" alt="" className='rounded-full h-4' />
+                                <div className=''>
+                                    <p className='font-semibold text-xs flex items-center'>Muhidul Hasan</p>
+                                </div>
+                            </div>
+                            <p className='text-xs font-semibold text-[#475467]'>11 Jan</p>
+                        </div>
+                        <div className='pt-4'>
+                            <p className='text-xs'>You: Sure thing, I’ll have a look today. They’re looking great!</p>
+
+                        </div>
+                    </div>
+                    <div className='border p-2 rounded-lg border mb-2'>
+                        <div className='flex items-center justify-between'>
+                            <div className='flex items-center gap-2'>
+                                <img src="https://xsgames.co/randomusers/assets/avatars/male/71.jpg" alt="" className='rounded-full h-4' />
+                                <div className=''>
+                                    <p className='font-semibold text-xs flex items-center'>Muhidul Hasan</p>
+                                </div>
+                            </div>
+                            <p className='text-xs font-semibold text-[#475467]'>11 Jan</p>
+                        </div>
+                        <div className='pt-4'>
+                            <p className='text-xs'>You: Sure thing, I’ll have a look today. They’re looking great!</p>
+
+                        </div>
+                    </div>
+                    <div className='border p-2 rounded-lg border mb-2'>
+                        <div className='flex items-center justify-between'>
+                            <div className='flex items-center gap-2'>
+                                <img src="https://xsgames.co/randomusers/assets/avatars/male/71.jpg" alt="" className='rounded-full h-4' />
+                                <div className=''>
+                                    <p className='font-semibold text-xs flex items-center'>Muhidul Hasan</p>
+                                </div>
+                            </div>
+                            <p className='text-xs font-semibold text-[#475467]'>11 Jan</p>
+                        </div>
+                        <div className='pt-4'>
+                            <p className='text-xs'>You: Sure thing, I’ll have a look today. They’re looking great!</p>
+
+                        </div>
+                    </div>git
                 </div>
             </div>
             <div className='grow p-5'>
