@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import CourseControl from '../CourseControl/CourseControl';
 
 const Settings = () => {
     return (
         <div>
-            This is settings page
+            <CourseControl></CourseControl>
         </div>
     );
 };

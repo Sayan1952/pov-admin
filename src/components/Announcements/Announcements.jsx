@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Announcements = () => {
     return (
         <div>
-            Announcement
+            <Link to = '/ManageCourse'>To go Manage Course/edit class</Link>
         </div>
     );
 };

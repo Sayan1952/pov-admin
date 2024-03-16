@@ -1,5 +1,6 @@
 import React from 'react';
 import { Datepicker } from 'flowbite-react';
+import ToggleButton from '../ToggleButton';
 const ManageCourse = () => {
     return (
         <div className='px-14'>
@@ -13,14 +14,14 @@ const ManageCourse = () => {
 
                 {/* here are the radio and toggle buttons */}
 
-                <div className='flex justify-between w-1/3'>
+                <div className='flex justify-between w-1/3 '>
                     <div className='flex items-center justify-between'>
                         <input type="radio" name="radio-5" className="radio radio-success" checked />
                         <p className='text-sm pl-2'>Android App Development</p>
                     </div>
                     <div className="form-control w-64 text-sm">
                         <label className="cursor-pointer label">
-                            <input type="checkbox" className="toggle [--tglbg:#2BA98B] bg-white hover:bg-white border-[#2BA98B]" />
+                            <ToggleButton />
                             <span className="label-text text-sm">Allow students to join the class</span>
                         </label>
                     </div>
@@ -32,7 +33,7 @@ const ManageCourse = () => {
                     </div>
                     <div className="form-control w-64 text-sm">
                         <label className="cursor-pointer label">
-                            <input type="checkbox" className="toggle [--tglbg:#2BA98B] bg-white hover:bg-white border-[#2BA98B]" />
+                            <ToggleButton />
                             <span className="label-text text-sm">Send notifications to students</span>
                         </label>
                     </div>
@@ -44,7 +45,7 @@ const ManageCourse = () => {
                     </div>
                     <div className="form-control w-64 text-sm">
                         <label className="cursor-pointer label">
-                            <input type="checkbox" className="toggle [--tglbg:#2BA98B] bg-white hover:bg-white border-[#2BA98B]" />
+                            <ToggleButton />
                             <span className="label-text text-sm">Send notifications to teachers</span>
                         </label>
                     </div>

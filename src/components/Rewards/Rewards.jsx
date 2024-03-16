@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
+import ToggleButton from '../ToggleButton';
 
 
 
@@ -54,7 +55,7 @@ const Rewards = () => {
                             </td>
                             <td>
                                 <div className='flex items-center gap-4'>
-                                    <input type="checkbox" className="toggle [--tglbg:green] bg-white hover:bg-white border-green-500" checked />
+                                    <ToggleButton />
                                     <button><FontAwesomeIcon icon={faTrashCan} /></button>
                                 </div>
                             </td>
@@ -81,7 +82,7 @@ const Rewards = () => {
                             </td>
                             <td>
                                 <div className='flex items-center gap-4'>
-                                    <input type="checkbox" className="toggle [--tglbg:green] bg-white hover:bg-white border-green-500" checked />
+                                    <ToggleButton />
                                     <button><FontAwesomeIcon icon={faTrashCan} /></button>
                                 </div>
                             </td>
@@ -108,7 +109,7 @@ const Rewards = () => {
                             </td>
                             <td>
                                 <div className='flex items-center gap-4'>
-                                    <input type="checkbox" className="toggle [--tglbg:green] bg-white hover:bg-white border-green-500" checked />
+                                    <ToggleButton />
                                     <button><FontAwesomeIcon icon={faTrashCan} /></button>
                                 </div>
                             </td>

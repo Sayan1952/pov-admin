@@ -12,6 +12,7 @@ import Settings from './components/Settings/Settings';
 import Sidebar from './components/Sidebar/Sidebar';
 import ManageCourse from './components/ManageCourse/ManageCourse';
 import CourseControl from './components/CourseControl/CourseControl';
+import PreBook from './components/PreBook/PreBook';
 
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
     <Route path="/Settings" element={<Settings/>} />
     <Route path="/Support" element={<Support/>} />
     <Route path="/ManageCourse" element={<ManageCourse/>} />
-    <Route path="/CourseControl" element={<CourseControl/>} />
+    <Route path="/Coursecontrol" element={<CourseControl/>} />
+    <Route path="/PreBook" element={<PreBook/>} />
     </Routes>
     </div>
     </div>

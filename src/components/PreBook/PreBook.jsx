@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Switch from 'react-ios-switch';
+import ToggleButton from '../ToggleButton';
 
 const PreBook = () => {
+
+    const [isChecked, setIsChecked] = useState(false)
+
     return (
         <div className='px-14 pt-5'>
             <div className='flex items-center justify-between'>
@@ -10,7 +15,7 @@ const PreBook = () => {
                 </div>
                 <div className="form-control w-40 text-sm">
                     <label className="cursor-pointer label">
-                        <input type="checkbox" className="toggle [--tglbg:#2BA98B] bg-white hover:bg-white border-[#2BA98B]" />
+                        <ToggleButton />
                         <span className="label-text text-sm">Start Enrollment</span>
                     </label>
                 </div>
