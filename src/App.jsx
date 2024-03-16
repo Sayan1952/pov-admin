@@ -10,6 +10,7 @@ import Support from './components/Support/Support';
 import Overview from './components/Overview/Overview';
 import Settings from './components/Settings/Settings';
 import Sidebar from './components/Sidebar/Sidebar';
+import ManageCourse from './components/ManageCourse/ManageCourse';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
     <Route path="/Announcements" element={<Announcements/>} />
     <Route path="/Settings" element={<Settings/>} />
     <Route path="/Support" element={<Support/>} />
+    <Route path="/ManageCourse" element={<ManageCourse/>} />
     </Routes>
     </div>
     </div>
