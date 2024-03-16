@@ -8,7 +8,7 @@ const CourseControl = () => {
             <div className='flex items-end justify-between'>
                 <div>
                     <p className='font-medium text-3xl'>Coupon Status</p>
-                    <p>Below you can see the information of how many coupons used</p>
+                    <p className='text-[#667085]'>Below you can see the information of how many coupons used</p>
                 </div>
                 <button className='text-[#2BA98B] p-2 border-2 rounded-lg flex items-center border-[#2BA98B] font-semibold text-sm hover:bg-[#2BA98B] hover:text-white'><FontAwesomeIcon icon={faPlus} className='mr-2' />Create a new coupon</button>
             </div>
