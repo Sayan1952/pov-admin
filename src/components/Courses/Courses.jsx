@@ -1,10 +1,10 @@
 import React from 'react';
+import ManageCourse from '../ManageCourse/ManageCourse';
 
 const Courses = () => {
   return (
-    <div className="p-8">
-      <h1 className="text-2xl font-bold">Course Page</h1>
-      <p>Welcome to the Course Page!</p>
+    <div className="">
+      <ManageCourse/>
     </div>
   );
 };
