@@ -1,10 +1,11 @@
 import React from 'react';
 import ManageCourse from '../ManageCourse/ManageCourse';
+import CourseControl from '../CourseControl/CourseControl';
 
 const Courses = () => {
   return (
     <div className="">
-      <ManageCourse/>
+      <CourseControl/>
     </div>
   );
 };
