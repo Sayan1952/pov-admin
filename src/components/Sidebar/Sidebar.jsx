@@ -100,7 +100,7 @@ const Sidebar = () => {
                     </ul>
                 </div>
                 <div>
-                    <div className='flex items-center gap-5'>
+                    <div className='flex items-center gap-5 p-3'>
                         <img src="https://xsgames.co/randomusers/assets/avatars/male/71.jpg" alt="" className='rounded-full h-8' />
                         <div className=''>
                             <p className='font-semibold text-sm'>Muhidul Hasan</p>
