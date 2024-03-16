@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChartSimple, faBook, faUsers, faMedal, faBullhorn, faUserAstronaut, faGear } from '@fortawesome/free-solid-svg-icons'
 import Overview from '../Overview/Overview';
@@ -13,74 +13,90 @@ import Courses from '../Courses/Courses';
 const Sidebar = () => {
     return (
         <div>
-            <div className='md:w-56 h-screen p-5 flex flex-col justify-between border-r-2 top-0 '>
+            <div className='md:w-56 h-screen pt-5 flex flex-col justify-between border-r-2 top-0 '>
                 <div>
-                    <div>Loogo</div>
+                    <div className='px-5'>Logo</div>
                     <ul>
-                        <Link to='Overview'>
-                            <li className='py-2'>
+                        <li className='py-2 hover:bg-slate-200 p-5 hover:bg-slate-200'>
+                            <NavLink to='/Overview' style={({ isActive }) => {
+                                return isActive ? { color: "#2BA98B" } : { color: "#5E5E5E" };
+                            }}>
                                 <div className='flex items-center'>
                                     <div className='color-[#5E5E5E]'><FontAwesomeIcon icon={faChartSimple} /></div>
-                                    <div className='px-5 text-[#5E5E5E]'>Overview</div>
+                                    <div className='px-5 '>Overview</div>
                                 </div>
-                            </li>
-                        </Link >
-                        <Link to='Courses'>
-                            <li className='py-2'>
+                            </NavLink>
+                        </li>
+                        <li className='py-2 hover:bg-slate-200 p-5 hover:bg-slate-200'>
+                            <NavLink to='Courses' style={({ isActive }) => {
+                                return isActive ? { color: "#2BA98B" } : { color: "#5E5E5E" };
+                            }}>
                                 <div className='flex items-center'>
-                                    <FontAwesomeIcon icon={faBook} />
-                                    <div className='px-5 text-[#5E5E5E]'>Courses</div>
+                                    <div className='color-[#5E5E5E]'><FontAwesomeIcon icon={faBook} /></div>
+                                    <div className='px-5 '>Courses</div>
                                 </div>
-                            </li>
-                        </Link >
-                        <Link to='Users'>
-                            <li className='py-2'>
+                            </NavLink>
+                        </li>
+                        <li className='py-2 hover:bg-slate-200 p-5 hover:bg-slate-200'>
+                            <NavLink to='Users' style={({ isActive }) => {
+                                return isActive ? { color: "#2BA98B" } : { color: "#5E5E5E" };
+                            }}>
                                 <div className='flex items-center'>
-                                    <FontAwesomeIcon icon={faUsers} />
-                                    <div className='px-5 text-[#5E5E5E]'>Users</div>
+                                    <div className='color-[#5E5E5E]'><FontAwesomeIcon icon={faUsers} /></div>
+                                    <div className='px-5 '>Users</div>
                                 </div>
-                            </li>
-                        </Link>
-                        <Link to='Forums'>
-                            <li className='py-2'>
+                            </NavLink>
+                        </li>
+                        <li className='py-2 hover:bg-slate-200 p-5 hover:bg-slate-200'>
+                            <NavLink to='Forums' style={({ isActive }) => {
+                                return isActive ? { color: "#2BA98B" } : { color: "#5E5E5E" };
+                            }}>
                                 <div className='flex items-center'>
-                                    <FontAwesomeIcon icon={faUsers} />
-                                    <div className='px-5 text-[#5E5E5E]'>Forums</div>
+                                    <div className='color-[#5E5E5E]'><FontAwesomeIcon icon={faUsers} /></div>
+                                    <div className='px-5 '>Forums</div>
                                 </div>
-                            </li>
-                        </Link>
-                        <Link to="Rewards">
-                            <li className='py-2'>
+                            </NavLink>
+                        </li>
+                        <li className='py-2 hover:bg-slate-200 p-5 hover:bg-slate-200'>
+                            <NavLink to='Rewards' style={({ isActive }) => {
+                                return isActive ? { color: "#2BA98B" } : { color: "#5E5E5E" };
+                            }}>
                                 <div className='flex items-center'>
-                                    <FontAwesomeIcon icon={faMedal} />
-                                    <div className='px-5 text-[#5E5E5E]'>Rewards</div>
+                                    <div className='color-[#5E5E5E]'><FontAwesomeIcon icon={faMedal} /></div>
+                                    <div className='px-5 '>Rewards</div>
                                 </div>
-                            </li>
-                        </Link>
-                        <Link to="Announcements">
-                            <li className='py-2'>
+                            </NavLink>
+                        </li>
+                        <li className='py-2 hover:bg-slate-200 p-5 hover:bg-slate-200'>
+                            <NavLink to='Announcements' style={({ isActive }) => {
+                                return isActive ? { color: "#2BA98B" } : { color: "#5E5E5E" };
+                            }}>
                                 <div className='flex items-center'>
-                                    <FontAwesomeIcon icon={faBullhorn} />
-                                    <div className='px-5 text-[#5E5E5E]'>Announcements</div>
+                                    <div className='color-[#5E5E5E]'><FontAwesomeIcon icon={faBullhorn} /></div>
+                                    <div className='px-5 '>Announcements</div>
                                 </div>
-                            </li>
-                        </Link>
-                        <Link to="Settings">
-                            <li className='py-2'>
+                            </NavLink>
+                        </li>
+                        <li className='py-2 hover:bg-slate-200 p-5 hover:bg-slate-200'>
+                            <NavLink to='Settings' style={({ isActive }) => {
+                                return isActive ? { color: "#2BA98B" } : { color: "#5E5E5E" };
+                            }}>
                                 <div className='flex items-center'>
-                                    <FontAwesomeIcon icon={faGear} />
-                                    <div className='px-5 text-[#5E5E5E]'>Settings</div>
+                                    <div className='color-[#5E5E5E]'><FontAwesomeIcon icon={faGear} /></div>
+                                    <div className='px-5 '>Settings</div>
                                 </div>
-                            </li>
-                        </Link>
-                        <Link to="Support">
-                            <li className='py-2'>
+                            </NavLink>
+                        </li>
+                        <li className='py-2 hover:bg-slate-200 p-5 hover:bg-slate-200'>
+                            <NavLink to='Support' style={({ isActive }) => {
+                                return isActive ? { color: "#2BA98B" } : { color: "#5E5E5E" };
+                            }}>
                                 <div className='flex items-center'>
-                                    <FontAwesomeIcon icon={faUserAstronaut} />
-                                    <div className='px-5 text-[#5E5E5E]'>Support</div>
+                                    <div className='color-[#5E5E5E]'><FontAwesomeIcon icon={faUserAstronaut} /></div>
+                                    <div className='px-5 '>Support</div>
                                 </div>
-                            </li>
-                        </Link>
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
                 <div>
