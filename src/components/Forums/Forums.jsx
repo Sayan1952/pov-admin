@@ -5,7 +5,7 @@ import { faEllipsisVertical, faFaceSmile, faPaperclip } from '@fortawesome/free-
 
 const Forums = () => {
     return (
-        <div className='h-screen flex'>
+        <div className='h-100vh overflow-hidden flex'>
             <div className='pt-4 w-72 h-screen flex-none border-r'>
                 <div className='flex items-center gap-3 mb-4'>
                     <p className='font-semibold pl-4'>Tickets</p>
